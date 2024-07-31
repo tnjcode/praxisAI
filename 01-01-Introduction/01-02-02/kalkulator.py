@@ -1,0 +1,5 @@
+print ("masukan nomor")
+x = input()
+print("X")
+y = input()
+print("result: ",int(x)*int(y))
