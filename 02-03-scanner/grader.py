@@ -13,7 +13,7 @@ args = vars(ap.parse_args())
 
 # define the answer key which maps the question number
 # to the correct answer
-ANSWER_KEY = {0: 2, 1: 4, 2: 1, 3: 1, 4: 2}
+ANSWER_KEY = {0: 1, 1: 4, 2: 1, 3: 2, 4: 2}
 
 
 # load the image, convert it to grayscale, blur it
