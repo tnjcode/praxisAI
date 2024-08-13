@@ -66,8 +66,8 @@ while True:
     
     # draw a vertical line in the middle of the frame
     height, width = frame.shape[:2]
-    mid_x = width // 4
-    cv2.line(frame, (mid_x, 0), (mid_x, height), (255, 0, 0), 2)
+    mid_y = width // 4
+    cv2.line(frame, (mid_y, 0), (mid_y, height), (255, 0, 0), 2)
     
     # only proceed if at least one contour was found
     if len(cnts) > 0:
@@ -84,8 +84,8 @@ while True:
             cv2.circle(frame, center, 10, (0, 0, 255), -1)
             pts.appendleft(center)
             
-            # check if the ball is to the left or right of the line
-            if center[0] < mid_x:
+            # check if the ball is tov the left or right of the line
+            if center[0] < mid_y:
                 cv2.putText(frame, "Goal", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 0), 3)
             else:
                 cv2.putText(frame, "offside", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 3)
