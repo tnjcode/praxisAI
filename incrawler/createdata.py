@@ -4,7 +4,7 @@ import time
 
 #####################################################
 
-myPath = 'C:\\Users\\LENOVO\\praxisAI\\haarcascad\\hp_n' # Rasbperry Pi:  '/home/pi/Desktop/data/images'
+myPath = 'C:\\Users\\LENOVO\\praxisAI\\incrawler\\n' # Rasbperry Pi:  '/home/pi/Desktop/data/images'
 cameraNo = 0
 cameraBrightness = 180
 moduleVal = 10  # SAVE EVERY ITH FRAME TO AVOID REPETITION
