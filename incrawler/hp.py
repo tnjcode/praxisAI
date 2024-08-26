@@ -38,7 +38,7 @@ while True:
     # DETECT THE OBJECT USING THE CASCADE
     scaleVal =1 + (cv2.getTrackbarPos("Scale", "Result") /1000)
     neig=cv2.getTrackbarPos("Neig", "Result")
-    objects = cascade.detectMultiScale(gray,scaleVal, neig)
+    objects = cascade 
     # DISPLAY THE DETECTED OBJECTS
     for (x,y,w,h) in objects:
         area = w*h
